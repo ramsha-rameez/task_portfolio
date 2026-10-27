@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ramsha Rameez - Aspiring AI Engineer and Software Engineering student at MUET. Python, Pandas, NumPy, SQL and web development.">
+  <title>Ramsha Rameez</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="scroll-progress" id="progress"></div>
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <a href="#home" class="logo">Ramsha<span>.</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#certifications" id="navCerts">Certifications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="themeBtn" aria-label="Switch light or dark theme">🌙</button>
+      <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-text">
+        <p class="eyebrow">Hello, I'm</p>
+        <h1>Ramsha Rameez</h1>
+        <h2 class="typing">I am an <span id="typed"></span><span class="cursor">|</span></h2>
+        <p class="hero-desc">
+          Computer Science student at MUET Jamshoro. I turn raw data into clear answers
+          with Python, and I am building my path toward creating practical AI applications.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        </div>
+        <div class="socials">
+          <a href="https://github.com/ramsha-rameez" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/ramsharameez/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:ramsha.rameez64@gmail.com">Email</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="code-card">
+          <div class="code-top">
+            <span></span><span></span><span></span>
+            <small>ramsha.py</small>
+          </div>
+<pre><code><span class="c"># who am i</span>
+<span class="k">class</span> <span class="f">Engineer</span>:
+    name = <span class="s">"Ramsha Rameez"</span>
+    role = <span class="s">"Aspiring AI Engineer"</span>
+    uni  = <span class="s">"MUET Jamshoro"</span>
+    tools = [<span class="s">"Python"</span>, <span class="s">"Pandas"</span>,
+             <span class="s">"NumPy"</span>, <span class="s">"SQL"</span>]
+    learning = <span class="s">"Machine Learning"</span>
+
+    <span class="k">def</span> <span class="f">goal</span>(self):
+        <span class="k">return</span> <span class="s">"Build useful AI"</span></code></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <p class="section-label reveal">About Me</p>
+      <h2 class="section-title reveal">Curious by nature, <em>careful</em> by habit</h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I am a Computer Science student at Mehran University of Engineering and Technology (MUET),
+            Jamshoro, graduating in June 2028. My focus is artificial intelligence, and I am especially
+            drawn to building practical tools that real people can use, such as intelligent assistants
+            and applications powered by language models.
+          </p>
+          <p>
+            I believe good AI starts with good data. That is why I have spent my time getting strong with
+            Python, Pandas, NumPy and SQL: cleaning messy data, asking the right questions of it, and
+            explaining what it shows. I am now studying machine learning to take the next step from
+            analysing data to building systems that learn from it.
+          </p>
+          <p>
+            Beyond code, I lead the MUET ACM Women Chapter as its President, where I help organise
+            learning opportunities and build a supportive community for women in technology. I also enjoy
+            design, and I use Figma and Canva to make what I build clear and pleasant to use.
+          </p>
+        </div>
+        <div class="about-side reveal">
+          <div class="stat"><h3 data-count="4">0</h3><p>Projects built</p></div>
+          <div class="stat"><h3 data-count="10" data-plus="true">0</h3><p>Tools and skills</p></div>
+          <div class="stat"><h3 data-count="1">0</h3><p>Chapter led as President</p></div>
+          <div class="focus-card">
+            <h4>Currently focused on</h4>
+            <ul>
+              <li>Machine learning fundamentals</li>
+              <li>Building data and AI portfolio projects</li>
+              <li>Practical AI applications and LLM tools</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section alt" id="skills">
+      <p class="section-label reveal">Skills</p>
+      <h2 class="section-title reveal">What I <em>work with</em></h2>
+
+      <div class="skills-grid">
+        <div class="skill-bars reveal">
+          <div class="bar-item">
+            <div class="bar-head"><span>Python</span><small>Intermediate to Advanced</small></div>
+            <div class="bar"><div class="fill" data-width="85"></div></div>
+          </div>
+          <div class="bar-item">
+            <div class="bar-head"><span>Pandas and NumPy</span><small>Intermediate</small></div>
+            <div class="bar"><div class="fill" data-width="75"></div></div>
+          </div>
+          <div class="bar-item">
+            <div class="bar-head"><span>SQL (MySQL)</span><small>Intermediate</small></div>
+            <div class="bar"><div class="fill" data-width="70"></div></div>
+          </div>
+          <div class="bar-item">
+            <div class="bar-head"><span>HTML and CSS</span><small>Advanced</small></div>
+            <div class="bar"><div class="fill" data-width="90"></div></div>
+          </div>
+          <div class="bar-item">
+            <div class="bar-head"><span>JavaScript</span><small>Beginner to Intermediate</small></div>
+            <div class="bar"><div class="fill" data-width="55"></div></div>
+          </div>
+          <div class="bar-item">
+            <div class="bar-head"><span>Machine Learning</span><small>Currently studying</small></div>
+            <div class="bar"><div class="fill" data-width="35"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-tags reveal">
+          <h4>Data and AI</h4>
+          <div class="tags"><span>Python</span><span>Pandas</span><span>NumPy</span><span>Data Analysis</span><span>Machine Learning (learning)</span></div>
+          <h4>Databases and Tools</h4>
+          <div class="tags"><span>MySQL</span><span>Excel</span><span>Git and GitHub</span><span>VS Code</span></div>
+          <h4>Web and Design</h4>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Figma</span><span>Canva</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section" id="projects">
+      <p class="section-label reveal">Projects</p>
+      <h2 class="section-title reveal">Things I have <em>built</em></h2>
+
+      <div class="project-grid">
+        <article class="card reveal">
+          <div class="card-top">
+            <span class="badge">Data Analysis</span>
+            <span class="status done">Completed</span>
+          </div>
+          <h3>AI Developer Survey Explorer</h3>
+          <p>
+            An exploratory analysis of the Stack Overflow Developer Survey that looks at how developers
+            use AI tools. I cleaned the data, grouped answers, and turned them into clear findings using
+            Pandas only.
+          </p>
+          <div class="tags small"><span>Python</span><span>Pandas</span><span>EDA</span></div>
+          <a href="https://github.com/ramsha-rameez" target="_blank" rel="noopener" class="card-link">See on GitHub →</a>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-top">
+            <span class="badge">Automation</span>
+            <span class="status done">Completed</span>
+          </div>
+          <h3>Customer Feedback Cleaner</h3>
+          <p>
+            A Python program that loads raw store feedback from a JSON file, fixes messy and missing
+            entries, and produces a clean dataset with simple insights about what customers say.
+          </p>
+          <div class="tags small"><span>Python</span><span>JSON</span><span>Data Cleaning</span></div>
+          <a href="https://github.com/ramsha-rameez" target="_blank" rel="noopener" class="card-link">See on GitHub →</a>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-top">
+            <span class="badge">Machine Learning</span>
+            <span class="status progress">In Progress</span>
+          </div>
+          <h3>Handwritten Digit Reader</h3>
+          <p>
+            A digit recognition project on the MNIST dataset, built with NumPy to understand how a model
+            learns from images step by step, before moving on to larger ML libraries.
+          </p>
+          <div class="tags small"><span>Python</span><span>NumPy</span><span>MNIST</span></div>
+          <a href="https://github.com/ramsha-rameez" target="_blank" rel="noopener" class="card-link">Follow on GitHub →</a>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-top">
+            <span class="badge">Web Development</span>
+            <span class="status done">Live</span>
+          </div>
+          <h3>This Portfolio Website</h3>
+          <p>
+            A responsive personal website made with plain HTML, CSS and JavaScript. It has a dark
+            mode, scroll animations, and a clean layout that works on phones and laptops.
+          </p>
+          <div class="tags small"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <a href="#home" class="card-link">You are here ↑</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section alt" id="education">
+      <p class="section-label reveal">Education and Leadership</p>
+      <h2 class="section-title reveal">My <em>journey</em> so far</h2>
+
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <span class="dot"></span>
+          <div class="t-card">
+            <small>2024 - June 2028</small>
+            <h3>BS Computer Science</h3>
+            <h4>Mehran University of Engineering and Technology, Jamshoro</h4>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <span class="dot"></span>
+          <div class="t-card">
+            <small>Aug 2025 - 2026</small>
+            <h3>President, ACM Women Chapter</h3>
+            <h4>MUET</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS (filled by script.js, hidden if empty) -->
+    <section class="section" id="certifications">
+      <p class="section-label reveal">Certifications</p>
+      <h2 class="section-title reveal">Always <em>learning</em></h2>
+      <div class="cert-grid" id="certGrid"></div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section alt" id="contact">
+      <p class="section-label reveal">Contact</p>
+      <h2 class="section-title reveal">Let's <em>talk</em></h2>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <p>
+            I am open to internships, collaborations and conversations about AI and data.
+            Send me a message and I will reply as soon as I can.
+          </p>
+          <a href="mailto:ramsha.rameez64@gmail.com" class="contact-line">✉ ramsha.rameez64@gmail.com</a>
+          <a href="https://www.linkedin.com/in/ramsharameez/" target="_blank" rel="noopener" class="contact-line">in /ramsharameez</a>
+          <a href="https://github.com/ramsha-rameez" target="_blank" rel="noopener" class="contact-line">⌥ github.com/ramsha-rameez</a>
+        </div>
+
+        <form class="contact-form reveal" id="contactForm">
+          <input type="text" id="name" placeholder="Your name" required>
+          <input type="email" id="email" placeholder="Your email" required>
+          <textarea id="message" rows="5" placeholder="Your message" required></textarea>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Ramsha Rameez. Designed and built by me.</p>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
