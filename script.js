@@ -1,11 +1,3 @@
-// ---------- 1. CERTIFICATIONS DATA ----------
-// Add your courses here later, in this exact format:
-// { title: "Course name", platform: "Platform name", date: "Month Year" },
-const certifications = [
-  // Example format (remove the // to use):
-  // { title: "Data Analysis with Python", platform: "Coursera", date: "June 2025" },
-];
-
 const certGrid = document.getElementById("certGrid");
 const certSection = document.getElementById("certifications");
 const navCerts = document.getElementById("navCerts");
@@ -22,7 +14,7 @@ if (certifications.length === 0) {
   });
 }
 
-// ---------- 2. TYPING EFFECT ----------
+// ----------  TYPING EFFECT ----------
 const roles = ["Aspiring AI Engineer", "Python Developer", "Data Enthusiast", "Lifelong Learner"];
 const typed = document.getElementById("typed");
 let roleIndex = 0;
@@ -50,7 +42,7 @@ function type() {
 }
 type();
 
-// ---------- 3. THEME TOGGLE (light / dark) ----------
+// ----------  THEME TOGGLE (light / dark) ----------
 const themeBtn = document.getElementById("themeBtn");
 
 function setTheme(mode) {
@@ -81,7 +73,7 @@ navLinks.querySelectorAll("a").forEach(function (link) {
   });
 });
 
-// ---------- 5. SCROLL REVEAL, SKILL BARS, COUNTERS ----------
+// ---------- SCROLL REVEAL, SKILL BARS, COUNTERS ----------
 function countUp(el) {
   const target = Number(el.dataset.count);
   const plus = el.dataset.plus === "true" ? "+" : "";
@@ -112,7 +104,7 @@ document.querySelectorAll(".reveal").forEach(function (el) {
   observer.observe(el);
 });
 
-// ---------- 6. NAVBAR, PROGRESS BAR, BACK TO TOP, ACTIVE LINK ----------
+// ---------- NAVBAR, PROGRESS BAR, BACK TO TOP, ACTIVE LINK ----------
 const navbar = document.getElementById("navbar");
 const progress = document.getElementById("progress");
 const toTop = document.getElementById("toTop");
@@ -139,7 +131,7 @@ toTop.addEventListener("click", function () {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
 
-// ---------- 7. CONTACT FORM (opens your email app) ----------
+// ---------- CONTACT FORM (opens your email app) ----------
 const form = document.getElementById("contactForm");
 const formNote = document.getElementById("formNote");
 
@@ -157,5 +149,5 @@ form.addEventListener("submit", function (e) {
   form.reset();
 });
 
-// ---------- 8. FOOTER YEAR ----------
+// ---------- FOOTER YEAR ----------
 document.getElementById("year").textContent = new Date().getFullYear();
